@@ -1,0 +1,67 @@
+name: Feature request
+description: Suggest a public improvement for a Flowdence app.
+title: "[Feature]: "
+labels:
+  - "type: feature"
+  - "status: needs triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing an idea.
+
+        This repository is public. Keep requests general and do not include confidential workflows, customer names, emails, tenant URLs, Marketplace SENs, or private screenshots.
+
+        For private support, procurement, or account-specific help, use https://flowdence.io/support instead.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which Flowdence app or surface would this improve?
+      options:
+        - ApprovalFlow for Confluence
+        - MuleSight for Confluence
+        - GrafanaSight for Confluence
+        - BoomiSight for Confluence
+        - Flowdence website or documentation
+        - Cross-product
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, and what makes it hard today?
+      placeholder: "Example: We need reviewers to see approval policy exceptions before a page is published."
+    validations:
+      required: true
+  - type: textarea
+    id: requested
+    attributes:
+      label: Requested outcome
+      description: What would you like Flowdence to add or change?
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: Importance
+      description: How important is this to your team?
+      options:
+        - Critical for adoption
+        - Important workflow improvement
+        - Nice to have
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current workaround
+      description: How do you handle this today, if at all?
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional public context
+      description: Add links or examples only if they are safe to share publicly.

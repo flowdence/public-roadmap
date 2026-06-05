@@ -1,0 +1,87 @@
+name: Bug report
+description: Report a public, non-sensitive issue with a Flowdence app.
+title: "[Bug]: "
+labels:
+  - "type: bug"
+  - "status: needs triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve Flowdence apps.
+
+        This repository is public. Do not include secrets, tokens, tenant URLs, Marketplace SENs, customer names, emails, screenshots with private data, logs with personal data, or anything you would not want visible on the internet.
+
+        For private support, licensing, security, or account-specific help, use https://flowdence.io/support instead.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which Flowdence app or surface is affected?
+      options:
+        - ApprovalFlow for Confluence
+        - MuleSight for Confluence
+        - GrafanaSight for Confluence
+        - BoomiSight for Confluence
+        - Flowdence website or documentation
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Public summary
+      description: Describe the problem without private customer data.
+      placeholder: "Example: The dashboard macro shows an empty state after configuration succeeds."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide generic steps we can try in a test site.
+      placeholder: |
+        1. Open a Confluence page
+        2. Insert the app macro
+        3. Configure a valid test connection
+        4. Observe the result
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact
+      description: Choose the closest public impact level.
+      options:
+        - Blocks use of the app
+        - Breaks an important workflow
+        - Confusing or incorrect behavior
+        - Cosmetic or low-impact issue
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: Atlassian host product
+      description: Which Atlassian product and approximate plan, if relevant? Do not include your site URL.
+      placeholder: Confluence Cloud Standard
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional public context
+      description: Add screenshots only if they contain no private data. For private screenshots, open a support ticket instead.

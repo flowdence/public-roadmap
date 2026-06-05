@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support
+    url: https://flowdence.io/support
+    about: Use Flowdence Support for private bugs, licensing, security, setup, or account-specific help.
+  - name: Documentation
+    url: https://flowdence.io/docs/
+    about: Browse setup guides, product documentation, and troubleshooting pages.
+  - name: Status page
+    url: https://flowdence.statuspage.io/
+    about: Check current incidents and availability updates.
